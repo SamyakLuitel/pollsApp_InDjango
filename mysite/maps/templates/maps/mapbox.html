@@ -1,0 +1,44 @@
+{%load static %}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Google Maps Clone</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+<style>
+    body {
+        margin : 0;
+    }
+    #map {
+        height: 100vh;
+        width : 100vw;
+
+    }
+</style>
+<script src="{% static 'maps/script.js'%}" defer></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
+
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+
+    </head>
+    <body>
+        <div id='map' ></div>
+
+
+
+
+
+ 
+
+
+        
+    </body>
+</html>
