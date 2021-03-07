@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'hello.apps.HelloConfig',
     'autos.apps.AutosConfig',
     'maps.apps.MapsConfig',
+    'leaflet.apps.LeafletConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

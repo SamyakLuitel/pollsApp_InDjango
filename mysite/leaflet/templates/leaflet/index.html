@@ -1,0 +1,58 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Leaflet Map </title>
+  </head>
+  <link rel="stylesheet" href="{% static 'leaflet/style.css'%}">
+
+  <!----Leaflet's CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+
+  
+  <body>
+ <div id="mapid">
+
+
+ </div>
+  </body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+<script>
+var map = L.map('mapid').setView([27.6334601,85.5067419], 10);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([27.6289415,85.5227225]).addTo(map)
+    .bindPopup('Its my home .<br> You can find me here .')
+    .openPopup();
+
+var circle = L.circle([27.6299304,85.5238416],{
+  color:'red',
+  fillcolor:"#f03",
+  fillOpacity:0.5,
+  radius:500
+}).addTo(map)
+
+var polygon = L.polygon([
+    [27.6289405,85.5227525],
+    [27.6249415,85.5227225],
+    [27.6286415,85.5627325]
+]).addTo(map);
+
+circle.bindPopup("I am a circle.");
+polygon.bindPopup("I am a polygon.");
+</script>
+

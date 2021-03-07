@@ -8,7 +8,7 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('autos/', include('autos.urls')),
     path('maps/', include('maps.urls')),
-
+    path('leaflet/', include('leaflet.urls')),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
 ]
