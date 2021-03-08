@@ -26,6 +26,7 @@ SECRET_KEY = 'fwo5%%3^_ims&w_v)+q@x(&(w#yikly7v@satk@*g5dsn4-sxi'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['samyakluitel.pythonanywhere.com']
 
 
 # Application definition
@@ -37,6 +38,8 @@ INSTALLED_APPS = [
     'autos.apps.AutosConfig',
     'maps.apps.MapsConfig',
     'leaflet.apps.LeafletConfig',
+    'tasks.apps.TasksConfig',
+    'cats.apps.CatsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
