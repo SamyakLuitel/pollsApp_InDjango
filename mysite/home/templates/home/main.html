@@ -1,11 +1,42 @@
-<ul>
-<li><p><a href="/polls">A Polls Application</a></p></li>
-<li><p><a href="/hello">Test the session</a></p></li>
-<li><a href="/autos">Autos CRUD</a></li>
-<li><a href="/maps">MapBox map</a></li>
-<li><a href="/leaflet">Leaflet map</a></li>
-<li><a href="/tasks">Todo app</a></li>
-<li><a href="/cats">Cats CURD</a></li>
-</ul>
+{% load static%}
+<link rel="stylesheet" href="{% static 'home/style.css'%}">
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<body>
+<h3>Web projects</h3>
+
+<div class ="projects">
+<div class ="center-column">
+
+<ul>
+
+    <div class="item-row">
+        <li><a class="btn btn-sm btn-info" href="/polls">A Polls Application</a></li>
+    </div>
+
+    <div class="item-row">
+    <li><a class="btn btn-sm btn-info" href="/hello">Test the session</a></li>
+    </div>
+    <div class="item-row">
+        <li><a class="btn btn-sm btn-info" href="/autos">Autos CRUD</a></li>
+    </div>
+    <div class="item-row">
+        <li><a class="btn btn-sm btn-info" href="/maps">MapBox map</a></li>
+    </div>
+    <div class="item-row">
+        <li><a class="btn btn-sm btn-info" href="/leaflet">Leaflet map</a></li>
+    </div>
+
+    <div class="item-row">
+<li><a class="btn btn-sm btn-info" href="/tasks">Todo app</a></li>
+</div>
+<div class="item-row">
+
+<li><a class="btn btn-sm btn-info" href="/cats">Cats CURD</a></li>
+</div>
+</ul>
+</div>
+</div>
+
+</body>
 
